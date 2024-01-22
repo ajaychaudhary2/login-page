@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    --angle: 0deg;
+    width: 50vmin;
+    height: 40vmin;
+
+    border: 7px solid;
+    border-image: linear-gradient(var(--angle), #00f0fb, #054a96, #057f9c) 1;
+    animation: 5s rotate linear infinite;
+
+    position: absolute;
+    top: 28%;
+    left: 50%;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+body {
+    background: url('bg.png.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+
+.container h1 {
+    font-size: 3rem;
+    padding: 18px;
+    text-align: center;
+    color: #a9e8ff;
+    text-shadow: 6px 0px -2px;
+    font-family: 'Belanosima', sans-serif;
+    text-shadow: 0px 0px 2px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+
+
+
+}
+
+.box input {
+    font-size: 1.2rem;
+    padding: 9px 0;
+    width: 18vw;
+    outline: none;
+    border: none;
+    margin: 12px 11px;
+    background: none;
+    border-bottom: 1px solid #00f0fb;
+    color: #00f0fb;
+    box-shadow: 1px 1px 1px #00f0fb;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+::placeholder {
+    color: #00f0fb;
+    opacity: .5;
+
+}
+
+.box i {
+    top: 4px;
+    position: relative;
+    font-size: 1.4rem;
+    align-items: center;
+    padding-left: 6px;
+    color: #00f0fb;
+}
+
+.btn:hover {
+    background-color: #00f0fb;
+    cursor: pointer;
+    color: #021a36;
+    box-shadow: none;
+    box-shadow: 1px 1px 12px #021a36;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 6px;
+    color: #00f0fb;
+    background: none;
+    margin: auto;
+    width: 30%;
+
+    border: 1px solid #00f0fb;
+    position: relative;
+    left: 35%;
+    border-radius: 23px;
+    font-family: 'Belanosima', sans-serif;
+
+    top: 11px;
+
+}
+
+.fa-envelope:before {
+    color: #00f0fb
+}
